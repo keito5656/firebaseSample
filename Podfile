@@ -3,7 +3,7 @@
 # Uncomment this line if you're using Swift
  use_frameworks!
 
-target 'fIreSample' do
+target 'FirebaseSample' do
 pod 'Firebase', '~> 2.5'
 pod 'JSQMessagesViewController', '~> 7.2'
 end

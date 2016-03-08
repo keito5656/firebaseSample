@@ -20,7 +20,7 @@ class ViewController: JSQMessagesViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        rootRef = Firebase(url: "https://[YOUR_APPNAME].firebaseio.com/")
+        rootRef = Firebase(url: "https://fireballs-chat.firebaseio.com/")
         let factory = JSQMessagesBubbleImageFactory()
         outgoingBubbleImageView = factory.outgoingMessagesBubbleImageWithColor(
             UIColor.jsq_messageBubbleBlueColor())

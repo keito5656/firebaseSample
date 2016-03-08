@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9FDC965DDA9B8C3857C9098B /* Pods_fIreSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 137E0530E5DC79CB0BA324E4 /* Pods_fIreSample.framework */; };
 		B5CA5D3D1C8BC17B00546BF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CA5D3C1C8BC17B00546BF0 /* AppDelegate.swift */; };
 		B5CA5D3F1C8BC17B00546BF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CA5D3E1C8BC17B00546BF0 /* ViewController.swift */; };
 		B5CA5D421C8BC17B00546BF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5CA5D401C8BC17B00546BF0 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		137E0530E5DC79CB0BA324E4 /* Pods_fIreSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fIreSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68E777515AFEE39B5C4242C4 /* Pods-fIreSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fIreSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fIreSample/Pods-fIreSample.debug.xcconfig"; sourceTree = "<group>"; };
+		AF82BC51389C20978E60E018 /* Pods-fIreSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fIreSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-fIreSample/Pods-fIreSample.release.xcconfig"; sourceTree = "<group>"; };
 		B5CA5D391C8BC17B00546BF0 /* fIreSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fIreSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5CA5D3C1C8BC17B00546BF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5CA5D3E1C8BC17B00546BF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FDC965DDA9B8C3857C9098B /* Pods_fIreSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B4EFD2D3CFD43DD1799F71F1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				68E777515AFEE39B5C4242C4 /* Pods-fIreSample.debug.xcconfig */,
+				AF82BC51389C20978E60E018 /* Pods-fIreSample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B5CA5D301C8BC17B00546BF0 = {
 			isa = PBXGroup;
 			children = (
 				B5CA5D3B1C8BC17B00546BF0 /* fIreSample */,
 				B5CA5D3A1C8BC17B00546BF0 /* Products */,
+				B4EFD2D3CFD43DD1799F71F1 /* Pods */,
+				DDA901BCA440820317782DB8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = fIreSample;
 			sourceTree = "<group>";
 		};
+		DDA901BCA440820317782DB8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				137E0530E5DC79CB0BA324E4 /* Pods_fIreSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5CA5D4B1C8BC17B00546BF0 /* Build configuration list for PBXNativeTarget "fIreSample" */;
 			buildPhases = (
+				E7EB9629D316B5EB8A3AFEA5 /* Check Pods Manifest.lock */,
 				B5CA5D351C8BC17B00546BF0 /* Sources */,
 				B5CA5D361C8BC17B00546BF0 /* Frameworks */,
 				B5CA5D371C8BC17B00546BF0 /* Resources */,
+				51F85D312EE501A42755BF1B /* Embed Pods Frameworks */,
+				64F780236019480F5B7302CE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +123,7 @@
 				TargetAttributes = {
 					B5CA5D381C8BC17B00546BF0 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 9CY4BN83FR;
 					};
 				};
 			};
@@ -129,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		51F85D312EE501A42755BF1B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fIreSample/Pods-fIreSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64F780236019480F5B7302CE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fIreSample/Pods-fIreSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7EB9629D316B5EB8A3AFEA5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B5CA5D351C8BC17B00546BF0 /* Sources */ = {
@@ -245,8 +321,10 @@
 		};
 		B5CA5D4C1C8BC17B00546BF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68E777515AFEE39B5C4242C4 /* Pods-fIreSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = fIreSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "info.net-kamome.fIreSample";
@@ -256,8 +334,10 @@
 		};
 		B5CA5D4D1C8BC17B00546BF0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF82BC51389C20978E60E018 /* Pods-fIreSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = fIreSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "info.net-kamome.fIreSample";
@@ -284,6 +364,7 @@
 				B5CA5D4D1C8BC17B00546BF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
